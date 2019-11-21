@@ -30,6 +30,10 @@
             this.comboCoulms = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureSetting = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboNeededCoulms = new System.Windows.Forms.ComboBox();
+            this.update = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSetting)).BeginInit();
@@ -54,6 +58,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(23, 105);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.dataGridView1.Size = new System.Drawing.Size(799, 395);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -74,10 +79,10 @@
             // 
             this.comboCoulms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboCoulms.FormattingEnabled = true;
-            this.comboCoulms.Location = new System.Drawing.Point(310, 65);
+            this.comboCoulms.Location = new System.Drawing.Point(634, 51);
             this.comboCoulms.Name = "comboCoulms";
             this.comboCoulms.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.comboCoulms.Size = new System.Drawing.Size(216, 21);
+            this.comboCoulms.Size = new System.Drawing.Size(188, 21);
             this.comboCoulms.TabIndex = 3;
             this.comboCoulms.SelectedIndexChanged += new System.EventHandler(this.comboCoulms_SelectedIndexChanged);
             // 
@@ -102,6 +107,53 @@
             this.pictureSetting.TabStop = false;
             this.pictureSetting.Click += new System.EventHandler(this.pictureSetting_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(486, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(142, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Select Needed Coulmns";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(518, 81);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(102, 13);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Needed Coulmns";
+            // 
+            // comboNeededCoulms
+            // 
+            this.comboNeededCoulms.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboNeededCoulms.FormattingEnabled = true;
+            this.comboNeededCoulms.Location = new System.Drawing.Point(635, 78);
+            this.comboNeededCoulms.Name = "comboNeededCoulms";
+            this.comboNeededCoulms.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.comboNeededCoulms.Size = new System.Drawing.Size(187, 21);
+            this.comboNeededCoulms.TabIndex = 7;
+            // 
+            // update
+            // 
+            this.update.AutoSize = true;
+            this.update.BackColor = System.Drawing.Color.Transparent;
+            this.update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.update.ForeColor = System.Drawing.Color.White;
+            this.update.Location = new System.Drawing.Point(19, 74);
+            this.update.Name = "update";
+            this.update.Size = new System.Drawing.Size(65, 20);
+            this.update.TabIndex = 9;
+            this.update.Text = "update";
+            this.update.Click += new System.EventHandler(this.update_Click);
+            // 
             // Excel_Show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -110,6 +162,10 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(834, 512);
             this.ControlBox = false;
+            this.Controls.Add(this.update);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboNeededCoulms);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureSetting);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboCoulms);
@@ -135,5 +191,9 @@
         private System.Windows.Forms.ComboBox comboCoulms;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureSetting;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboNeededCoulms;
+        private System.Windows.Forms.Label update;
     }
 }
