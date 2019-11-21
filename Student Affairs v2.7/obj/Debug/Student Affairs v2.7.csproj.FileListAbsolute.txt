@@ -1,0 +1,19 @@
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\Student Affairs v2.7.exe.config
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\Student Affairs v2.7.exe
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\Student Affairs v2.7.pdb
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\EntityFramework.dll
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\EntityFramework.xml
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student Affairs v2.7.csprojResolveAssemblyReference.cache
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.Form1.resources
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.Properties.Resources.resources
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student Affairs v2.7.csproj.GenerateResource.Cache
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student Affairs v2.7.exe
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student Affairs v2.7.pdb
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.Message.resources
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\Excel.dll
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\ICSharpCode.SharpZipLib.dll
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\Excel.pdb
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.Excel_Show.resources
+c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.AddUser.resources
