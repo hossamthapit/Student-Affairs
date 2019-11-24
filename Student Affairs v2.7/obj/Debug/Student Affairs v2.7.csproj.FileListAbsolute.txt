@@ -17,3 +17,4 @@ c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Stude
 c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\Excel.pdb
 c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.Excel_Show.resources
 c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.AddUser.resources
+C:\Users\Hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\DGV Printer.dll

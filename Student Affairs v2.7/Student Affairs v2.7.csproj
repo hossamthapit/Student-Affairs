@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DGV Printer">
+      <HintPath>D:\C#\DGV Printer.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
@@ -64,44 +67,44 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddUser.cs">
+    <Compile Include="Forms\AddUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddUser.Designer.cs">
+    <Compile Include="Forms\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\dataContext.cs" />
     <Compile Include="Classes\User.cs" />
-    <Compile Include="Excel Show.cs">
+    <Compile Include="Forms\Excel Show.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Excel Show.Designer.cs">
+    <Compile Include="Forms\Excel Show.Designer.cs">
       <DependentUpon>Excel Show.cs</DependentUpon>
     </Compile>
-    <Compile Include="Log in.cs">
+    <Compile Include="Forms\Log in.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Log in.Designer.cs">
+    <Compile Include="Forms\Log in.Designer.cs">
       <DependentUpon>Log in.cs</DependentUpon>
     </Compile>
-    <Compile Include="Message.cs">
+    <Compile Include="Forms\Message.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Message.Designer.cs">
+    <Compile Include="Forms\Message.Designer.cs">
       <DependentUpon>Message.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AddUser.resx">
+    <EmbeddedResource Include="Forms\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Excel Show.resx">
+    <EmbeddedResource Include="Forms\Excel Show.resx">
       <DependentUpon>Excel Show.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Log in.resx">
+    <EmbeddedResource Include="Forms\Log in.resx">
       <DependentUpon>Log in.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Message.resx">
+    <EmbeddedResource Include="Forms\Message.resx">
       <DependentUpon>Message.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
