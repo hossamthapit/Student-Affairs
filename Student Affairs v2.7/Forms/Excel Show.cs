@@ -13,15 +13,17 @@ using System.Windows.Forms;
 namespace Student_Affairs_v2._7 {
     public partial class Excel_Show : Form {
         DataSet result ;
+
         Dictionary<string, int> columnsIndex = new Dictionary<string, int>();
 
         public Excel_Show() {
             InitializeComponent();
+            dataGridView1.DefaultCellStyle.Format = "N2";
         }
 
         private void buttonSelectExcel_Click(object sender, EventArgs e) {
            
-            #region Out Sourcing Code
+            #region Out Sourcing Code to take data from excel file
             using (OpenFileDialog ofd = new OpenFileDialog() { Filter = "Excel WordBook|*.xls", ValidateNames = true }) {
                 if (ofd.ShowDialog() == DialogResult.OK) {
                     FileStream fs = File.Open(ofd.FileName, FileMode.Open, FileAccess.Read);
@@ -82,6 +84,30 @@ namespace Student_Affairs_v2._7 {
             printer.printDocument.PrinterSettings.Copies = 1;
             printer.PrintDataGridView(dataGridView1);
             #endregion            
+        }
+
+        private void btnSaveExcel_Click(object sender, EventArgs e) {
+
+            dataGridView1.ClipboardCopyMode = DataGridViewClipboardCopyMode.EnableAlwaysIncludeHeaderText;
+            dataGridView1.SelectAll();
+
+            #region outsourcingc code to export excel sheet
+            DataObject dataObj = dataGridView1.GetClipboardContent();
+            if (dataObj != null)
+                Clipboard.SetDataObject(dataObj);
+            Microsoft.Office.Interop.Excel.Application xlexcel;
+            Microsoft.Office.Interop.Excel.Workbook xlWorkBook;
+            Microsoft.Office.Interop.Excel.Worksheet xlWorkSheet;
+            object misValue = System.Reflection.Missing.Value;
+            xlexcel = new Microsoft.Office.Interop.Excel.Application();
+            xlexcel.Visible = true;
+            xlWorkBook = xlexcel.Workbooks.Add(misValue);
+            xlWorkSheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
+            Microsoft.Office.Interop.Excel.Range CR = (Microsoft.Office.Interop.Excel.Range)xlWorkSheet.Cells[1, 1];
+            CR.Select();
+            xlWorkSheet.PasteSpecial(CR, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+            #endregion
+            dataGridView1.Select();
         }
     }
 }

@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboHideColumns = new System.Windows.Forms.ComboBox();
             this.buttonPrint = new System.Windows.Forms.Button();
+            this.btnSaveExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureSetting)).BeginInit();
@@ -45,7 +46,7 @@
             this.buttonSelectExcel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSelectExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonSelectExcel.ForeColor = System.Drawing.Color.White;
-            this.buttonSelectExcel.Location = new System.Drawing.Point(375, 25);
+            this.buttonSelectExcel.Location = new System.Drawing.Point(375, 23);
             this.buttonSelectExcel.Name = "buttonSelectExcel";
             this.buttonSelectExcel.Size = new System.Drawing.Size(75, 23);
             this.buttonSelectExcel.TabIndex = 0;
@@ -59,6 +60,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(23, 105);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(799, 395);
             this.dataGridView1.TabIndex = 1;
             // 
@@ -156,6 +158,20 @@
             this.buttonPrint.UseVisualStyleBackColor = false;
             this.buttonPrint.Click += new System.EventHandler(this.buttonPrint_Click);
             // 
+            // btnSaveExcel
+            // 
+            this.btnSaveExcel.BackColor = System.Drawing.Color.Transparent;
+            this.btnSaveExcel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSaveExcel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveExcel.ForeColor = System.Drawing.Color.White;
+            this.btnSaveExcel.Location = new System.Drawing.Point(360, 52);
+            this.btnSaveExcel.Name = "btnSaveExcel";
+            this.btnSaveExcel.Size = new System.Drawing.Size(102, 23);
+            this.btnSaveExcel.TabIndex = 10;
+            this.btnSaveExcel.Text = "Save To Excel";
+            this.btnSaveExcel.UseVisualStyleBackColor = false;
+            this.btnSaveExcel.Click += new System.EventHandler(this.btnSaveExcel_Click);
+            // 
             // Excel_Show
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -164,6 +180,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(834, 512);
             this.ControlBox = false;
+            this.Controls.Add(this.btnSaveExcel);
             this.Controls.Add(this.buttonPrint);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboHideColumns);
@@ -197,5 +214,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboHideColumns;
         private System.Windows.Forms.Button buttonPrint;
+        private System.Windows.Forms.Button btnSaveExcel;
     }
 }
