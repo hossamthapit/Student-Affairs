@@ -19,3 +19,5 @@ c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Stude
 c:\users\hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.AddUser.resources
 C:\Users\Hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\bin\Debug\DGV Printer.dll
 C:\Users\Hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student Affairs v2.7.csproj.ResolveComReference.cache
+C:\Users\Hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.Home.resources
+C:\Users\Hossam\documents\visual studio 2015\Projects\Student Affairs v2.7\Student Affairs v2.7\obj\Debug\Student_Affairs_v2._7.Forms.Excel_Compare.resources

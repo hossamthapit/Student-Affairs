@@ -29,7 +29,6 @@
             this.labelExit = new System.Windows.Forms.Label();
             this.comboCoulms = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureSetting = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboHideColumns = new System.Windows.Forms.ComboBox();
@@ -37,7 +36,6 @@
             this.btnSaveExcel = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSetting)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonSelectExcel
@@ -56,6 +54,7 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(23, 105);
             this.dataGridView1.Name = "dataGridView1";
@@ -95,19 +94,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(100, 50);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureSetting
-            // 
-            this.pictureSetting.BackColor = System.Drawing.Color.Transparent;
-            this.pictureSetting.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureSetting.BackgroundImage")));
-            this.pictureSetting.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureSetting.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureSetting.InitialImage")));
-            this.pictureSetting.Location = new System.Drawing.Point(23, 9);
-            this.pictureSetting.Name = "pictureSetting";
-            this.pictureSetting.Size = new System.Drawing.Size(41, 31);
-            this.pictureSetting.TabIndex = 5;
-            this.pictureSetting.TabStop = false;
-            this.pictureSetting.Click += new System.EventHandler(this.pictureSetting_Click);
             // 
             // label1
             // 
@@ -178,14 +164,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(834, 512);
+            this.ClientSize = new System.Drawing.Size(832, 509);
             this.ControlBox = false;
             this.Controls.Add(this.btnSaveExcel);
             this.Controls.Add(this.buttonPrint);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.comboHideColumns);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureSetting);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.comboCoulms);
             this.Controls.Add(this.labelExit);
@@ -196,7 +181,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureSetting)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,7 +193,6 @@
         private System.Windows.Forms.Label labelExit;
         private System.Windows.Forms.ComboBox comboCoulms;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureSetting;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboHideColumns;

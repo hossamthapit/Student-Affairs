@@ -124,7 +124,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(838, 513);
+            this.ClientSize = new System.Drawing.Size(832, 509);
             this.ControlBox = false;
             this.Controls.Add(this.buttonSignIN);
             this.Controls.Add(this.label3);

@@ -34,8 +34,8 @@
             this.boxName = new System.Windows.Forms.TextBox();
             this.labelExit = new System.Windows.Forms.Label();
             this.groupBackGround = new System.Windows.Forms.GroupBox();
-            this.radioWhite = new System.Windows.Forms.RadioButton();
             this.radioBlack = new System.Windows.Forms.RadioButton();
+            this.radioWhite = new System.Windows.Forms.RadioButton();
             this.groupBackGround.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,24 +149,11 @@
             this.groupBackGround.BackColor = System.Drawing.Color.Transparent;
             this.groupBackGround.Controls.Add(this.radioBlack);
             this.groupBackGround.Controls.Add(this.radioWhite);
-            this.groupBackGround.Location = new System.Drawing.Point(677, 464);
+            this.groupBackGround.Location = new System.Drawing.Point(675, 461);
             this.groupBackGround.Name = "groupBackGround";
             this.groupBackGround.Size = new System.Drawing.Size(145, 36);
             this.groupBackGround.TabIndex = 16;
             this.groupBackGround.TabStop = false;
-            // 
-            // radioWhite
-            // 
-            this.radioWhite.AutoSize = true;
-            this.radioWhite.ForeColor = System.Drawing.Color.White;
-            this.radioWhite.Location = new System.Drawing.Point(21, 13);
-            this.radioWhite.Name = "radioWhite";
-            this.radioWhite.Size = new System.Drawing.Size(46, 17);
-            this.radioWhite.TabIndex = 0;
-            this.radioWhite.TabStop = true;
-            this.radioWhite.Text = "Blue";
-            this.radioWhite.UseVisualStyleBackColor = true;
-            this.radioWhite.CheckedChanged += new System.EventHandler(this.radioWhite_CheckedChanged);
             // 
             // radioBlack
             // 
@@ -181,13 +168,26 @@
             this.radioBlack.UseVisualStyleBackColor = true;
             this.radioBlack.CheckedChanged += new System.EventHandler(this.radioBlack_CheckedChanged);
             // 
+            // radioWhite
+            // 
+            this.radioWhite.AutoSize = true;
+            this.radioWhite.ForeColor = System.Drawing.Color.White;
+            this.radioWhite.Location = new System.Drawing.Point(21, 13);
+            this.radioWhite.Name = "radioWhite";
+            this.radioWhite.Size = new System.Drawing.Size(46, 17);
+            this.radioWhite.TabIndex = 0;
+            this.radioWhite.TabStop = true;
+            this.radioWhite.Text = "Blue";
+            this.radioWhite.UseVisualStyleBackColor = true;
+            this.radioWhite.CheckedChanged += new System.EventHandler(this.radioWhite_CheckedChanged);
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(834, 512);
+            this.ClientSize = new System.Drawing.Size(832, 509);
             this.ControlBox = false;
             this.Controls.Add(this.groupBackGround);
             this.Controls.Add(this.labelExit);

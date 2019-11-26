@@ -28,16 +28,14 @@ namespace Student_Affairs_v2._7 {
             dataContext data = new dataContext();
             bool findUser = false;
             try {
-                findUser= data.Users.FirstOrDefault(u => u._userName == boxUserName.Text)._password == boxPassword.Text;
-                if (findUser == true) {
-                    new Excel_Show().ShowDialog();
-                }
-                else
-                    new Message("No Such User & Password", 1).ShowDialog();
-            }
+                findUser = data.Users.FirstOrDefault(u => u._userName == boxUserName.Text)._password == boxPassword.Text;
+                if (findUser == false) throw new Exception();
+            }            
             catch {
                 new Message("No Such User & Password", 1).ShowDialog();
+                return;
             }
+            new Home().ShowDialog();
         }
     }
 }

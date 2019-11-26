@@ -44,6 +44,9 @@ namespace Student_Affairs_v2._7 {
             for (int i = 0; i < dataGridView1.ColumnCount; i++) {
                 dataGridView1.Columns[i].Visible = false;
             }
+            for (int i = 0; i < dataGridView1.RowCount; i++) {
+                if ((i & 1) == 1) dataGridView1.Rows[i].DefaultCellStyle.BackColor = Color.LightGray;
+            }
         }
 
         private void labelExit_Click(object sender, EventArgs e) {
@@ -55,10 +58,6 @@ namespace Student_Affairs_v2._7 {
             comboCoulms.Items.RemoveAt(comboCoulms.SelectedIndex);
             comboHideColumns.Items.Add(SelectedValue);        
             dataGridView1.Columns[columnsIndex[SelectedValue]].Visible=true;
-        }
-
-        private void pictureSetting_Click(object sender, EventArgs e) {
-            new AddUser().ShowDialog();
         }
 
         private void comboHideColumns_SelectedIndexChanged(object sender, EventArgs e) {
