@@ -24,7 +24,6 @@
         /// </summary>
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.labelExit = new System.Windows.Forms.Label();
             this.boxUserName = new System.Windows.Forms.TextBox();
             this.boxPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -33,27 +32,17 @@
             this.buttonSignIN = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // labelExit
-            // 
-            this.labelExit.AutoSize = true;
-            this.labelExit.BackColor = System.Drawing.Color.Transparent;
-            this.labelExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelExit.ForeColor = System.Drawing.Color.White;
-            this.labelExit.Location = new System.Drawing.Point(801, 9);
-            this.labelExit.Name = "labelExit";
-            this.labelExit.Size = new System.Drawing.Size(21, 20);
-            this.labelExit.TabIndex = 0;
-            this.labelExit.Text = "X";
-            this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
-            // 
             // boxUserName
             // 
+            this.boxUserName.BackColor = System.Drawing.Color.White;
+            this.boxUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.boxUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxUserName.Location = new System.Drawing.Point(343, 190);
             this.boxUserName.Multiline = true;
             this.boxUserName.Name = "boxUserName";
             this.boxUserName.Size = new System.Drawing.Size(153, 30);
             this.boxUserName.TabIndex = 1;
+            this.boxUserName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // boxPassword
             // 
@@ -61,8 +50,10 @@
             this.boxPassword.Location = new System.Drawing.Point(343, 269);
             this.boxPassword.Multiline = true;
             this.boxPassword.Name = "boxPassword";
+            this.boxPassword.PasswordChar = '#';
             this.boxPassword.Size = new System.Drawing.Size(153, 30);
             this.boxPassword.TabIndex = 2;
+            this.boxPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -125,25 +116,22 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(832, 509);
-            this.ControlBox = false;
             this.Controls.Add(this.buttonSignIN);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.boxPassword);
             this.Controls.Add(this.boxUserName);
-            this.Controls.Add(this.labelExit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelExit;
         private System.Windows.Forms.TextBox boxUserName;
         private System.Windows.Forms.TextBox boxPassword;
         private System.Windows.Forms.Label label1;

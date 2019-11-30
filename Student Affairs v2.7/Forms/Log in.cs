@@ -25,6 +25,10 @@ namespace Student_Affairs_v2._7 {
         }
 
         private void buttonSignIN_Click(object sender, EventArgs e) {
+            // remember to erase 
+            new Home().ShowDialog();
+            return;
+            ////////////////////
             dataContext data = new dataContext();
             bool findUser = false;
             try {
@@ -36,6 +40,10 @@ namespace Student_Affairs_v2._7 {
                 return;
             }
             new Home().ShowDialog();
+        }
+
+        private void Form1_Load(object sender, EventArgs e) {
+
         }
     }
 }

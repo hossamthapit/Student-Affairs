@@ -58,10 +58,14 @@
     <Reference Include="Microsoft.Office.Tools.Excel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,28 +75,14 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\AddUser.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\AddUser.Designer.cs">
-      <DependentUpon>AddUser.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Classes\ExcelOptions.cs" />
     <Compile Include="Classes\dataContext.cs" />
     <Compile Include="Classes\User.cs" />
-    <Compile Include="Forms\Excel Show.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Excel Show.Designer.cs">
-      <DependentUpon>Excel Show.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Excel_Compare.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Excel_Compare.Designer.cs">
-      <DependentUpon>Excel_Compare.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Log in.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,15 +103,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\AddUser.resx">
-      <DependentUpon>AddUser.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Excel Show.resx">
-      <DependentUpon>Excel Show.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Excel_Compare.resx">
-      <DependentUpon>Excel_Compare.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Log in.resx">
       <DependentUpon>Log in.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +154,18 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\setting.png" />
+    <Content Include="Data\addUser2.png" />
+    <Content Include="Data\addUser.png" />
+    <Content Include="Data\sky.jpg" />
+    <Content Include="Data\blue.jpg" />
+    <Content Include="Data\black.jpg" />
+    <Content Include="Data\excel.png" />
+    <Content Include="Data\person.png" />
+    <Content Include="Data\student.png" />
+    <Content Include="Data\mainBack].jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
